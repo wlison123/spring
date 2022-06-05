@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #000000;
+        
+      }
+      .box {
+        border: 1px solid #ccc;
+        position: relative;
+        display: flex;
+        overflow: hidden;
+      }
+      .content {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .left,
+      .right {
+        position: absolute;
+        background-color: aqua;
+        width: 10px;
+        height: 10px;
+      }
+      .left {
+        left: -10px;
+      }
+      .right {
+        right: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box">
+        <div class="left">-</div>
+        <div class="content">版权所有 (C) Microsoft Corporation。保留所有权利版权所有 (C) Microsoft Corporation。保留所有权利版权所有 (C) Microsoft Corporation。保留所有权利</div>
+        <div class="right">-</div>
+      </div>
+    </div>
+  </body>
+</html>
